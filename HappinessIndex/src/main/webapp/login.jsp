@@ -7,12 +7,10 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<form action="loginMember">
-		Login as TeamMember<input type="submit"><br>
+	<form action="submitLoginInput">
+		Enter user id<input type="text" name="userId"><br>
+		Enter code <input type="text" name="secretCode"><br>
+		Login<input type="submit"><br>
 	</form>
-		<form action="loginLead">
-		Login as Lead<input type="submit"><br>
-	</form>
-
 </body>
 </html>

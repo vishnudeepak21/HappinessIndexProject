@@ -8,8 +8,16 @@ public class Feedback {
 	@Id
 	int feedbackId;
 	int employeeId;
+	int sprintId;
 	int questionId;
 	int rating;
+
+	public int getSprintId() {
+		return sprintId;
+	}
+	public void setSprintId(int sprintId) {
+		this.sprintId = sprintId;
+	}
 	
 	public int getFeedbackId() {
 		return feedbackId;
@@ -36,6 +44,10 @@ public class Feedback {
 		this.rating = rating;
 	}
 	
-	
+	@Override
+	public String toString() {
+		return "Feedback [feedbackId=" + feedbackId + ", employeeId=" + employeeId + ", sprintId=" + sprintId
+				+ ", questionId=" + questionId + ", rating=" + rating + "]";
+	}
 	
 }

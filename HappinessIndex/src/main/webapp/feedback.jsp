@@ -12,6 +12,7 @@ Feedback page::
 		feedbackId<input type="text" name="feedbackId"><br> 
 		employeeId<input type="text" name="employeeId"><br> 
 		questionId<input type="text" name="questionId"><br> 
+		sprintId<input type="text" name="sprintId"><br> 
 		rating<input type="text" name="rating"><br>
 		<input type="submit"><br>
 	</form>

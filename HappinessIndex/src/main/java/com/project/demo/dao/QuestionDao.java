@@ -6,4 +6,5 @@ import com.project.demo.model.Question;
 
 public interface QuestionDao extends CrudRepository<Question, Integer>{
 
+	
 }
