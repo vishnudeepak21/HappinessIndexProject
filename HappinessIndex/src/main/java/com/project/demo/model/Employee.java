@@ -11,7 +11,6 @@ public class Employee {
 	
 	String name;
 	
-	String role;
 
 	public int getId() {
 		return id;
@@ -29,17 +28,9 @@ public class Employee {
 		this.name = name;
 	}
 
-	public String getRole() {
-		return role;
-	}
-
-	public void setRole(String role) {
-		this.role = role;
-	}
-
 	@Override
 	public String toString() {
-		return "Employee [id=" + id + ", name=" + name + ", role=" + role + "]";
+		return "Employee [id=" + id + ", name=" + name + "]";
 	}
 
 }

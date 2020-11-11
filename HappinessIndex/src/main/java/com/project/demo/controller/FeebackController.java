@@ -3,6 +3,7 @@ package com.project.demo.controller;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 
 import com.project.demo.dao.EmployeeDao;
 import com.project.demo.dao.FeedbackDao;
@@ -57,9 +58,18 @@ public class FeebackController {
 		return "createquestion.jsp";
 	}
 	
-	@RequestMapping("/loginMember")
-	public String loginMember() {
-		return "feedback.jsp";
+	@RequestMapping("/submitLoginInput")
+	public String loginMember(@RequestParam("userId") String userId,@RequestParam("secretCode") String secretCode) {
+		boolean ifAdminLogin = userId.equals("1");//change todo
+		if(ifAdminLogin) {
+			return "dashboard.jsp";
+		}
+		boolean ifSubmittedAlready = secretCode.equals("1");//change todo
+		if (ifSubmittedAlready) {
+			return "thankyou.jsp";
+		} else {
+			return "feedback.jsp";
+		}
 	}
 	
 	@RequestMapping("/loginLead")

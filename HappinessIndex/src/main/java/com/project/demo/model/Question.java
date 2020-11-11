@@ -8,7 +8,6 @@ public class Question {
 	
 	@Id
 	int id;
-	String Sprint;
 	String QuestionDesc;
 	
 	public int getId() {
@@ -17,12 +16,7 @@ public class Question {
 	public void setId(int id) {
 		this.id = id;
 	}
-	public String getSprint() {
-		return Sprint;
-	}
-	public void setSprint(String sprint) {
-		Sprint = sprint;
-	}
+	
 	public String getQuestionDesc() {
 		return QuestionDesc;
 	}
